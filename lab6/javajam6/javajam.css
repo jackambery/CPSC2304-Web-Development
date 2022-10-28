@@ -12,18 +12,34 @@ body {
 }
 
 main {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    margin-left: 200px;
     padding-bottom: 2em;
     display: block;
+    background-color: #FEF6C2;
+    overflow: auto;
+}
+
+main h2 h3 h4 p div ul dl {
+    padding-left: 3em;
+    padding-right: 2em;
 }
 
 header {
+    background-image: url(images/coffeelogo.jpg);
+    background-repeat: no-repeat;
     background-color: #D2B48C;
-    color: #8c3826;
+    padding-left: 240px;
+    color: #231814;
     padding-top: 5px;
     padding-bottom: 5px;
-    text-align: center;
+}
+
+/* left off on step 14 */
+header a {
+
 }
 
 h1 {
@@ -46,7 +62,10 @@ h4 {
     background-color: #D2B48C;
     font-size: 1.2em;
     padding-left: .5em;
-    padding-bottom: .25em;
+    padding-bottom: 0;
+    text-transform: capitalize;
+    border-bottom: #221811;
+    clear: left;
 }
 
 nav {
@@ -55,8 +74,19 @@ nav {
     font-weight: bold;
     padding-top: 5px;
     padding-bottom: 5px;
+    float: left;
+    width: 200px;
 }
-nav a{ text-decoration: none;}
+
+nav a { text-decoration: none; }
+nav a:link { color: #FEF6C2; }
+nav a:visited { color: #D2B48C; }
+nav a:hover { color: #CC9933; }
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
 
 footer {
     background-color: #D2B48C;
@@ -75,10 +105,23 @@ img {
 .details {
     padding-left: 20%;
     padding-right: 20%;
+    overflow: auto;
+}
+
+.floatleft {
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.onethird {
+    float: left;
+    width: 33%;
 }
 
 #wrapper {
-    background-color: #FEFAEB;
+    background-color: #231814;
+    padding: 0;
     margin-right: auto;
     margin-left: auto;
     width: 80%;
