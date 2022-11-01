@@ -38,9 +38,21 @@ header {
 }
 
 /* left off on step 14 */
-header a {
-
+header a:link {
+    text-decoration: none;
+    color: #231814;
 }
+
+header a:visited {
+    text-decoration: none;
+    color: #231814;
+}
+
+header a:hover {
+    color: #FEF6C2;
+}
+
+
 
 h1 {
     font-size: 3em;
@@ -63,7 +75,7 @@ h4 {
     font-size: 1.2em;
     padding-left: .5em;
     padding-bottom: 0;
-    text-transform: capitalize;
+    text-transform: uppercase;
     border-bottom: #221811;
     clear: left;
 }
