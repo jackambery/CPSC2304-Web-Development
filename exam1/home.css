@@ -38,8 +38,13 @@ div a {
 h1 {
     text-align: center;
     font-size: 30px;
-    border-bottom: 4px green;
+    border-bottom: 4px solid green;
+    padding: 5px;
     color: darkred;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav {
@@ -55,7 +60,7 @@ nav {
 nav a { 
     text-decoration: none; 
 }
-nav a:link { color: orange; }
+nav a:link { color:yellow; }
 nav a:visited { color: yellow; }
 nav a:hover { color: red; }
 
