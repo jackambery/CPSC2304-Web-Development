@@ -1,29 +1,24 @@
 
 body {
-    background-attachment: fixed;
     color: #221811;
     font-family: Tahoma, Arial, sans-serif;
 }
 
 main {
-    margin-left: 200px;
+    margin-left: 165px;
     padding-bottom: 2em;
-    display: block;
-    overflow: auto;
     background-color: white;
 }
 
 header {
     background-color: sienna;
-    padding-left: 240px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 header div {
-    height: 80%;
-    width: 70%;
-    padding: 10px;
+    margin: auto;
+    width: fit-content;
     background-color: rgb(32, 172, 172);
     background-image: 
         linear-gradient(
@@ -32,8 +27,15 @@ header div {
             rgb(32, 172, 172),
             rgb(10, 46, 44)
         );
+}
+
+div p {
     color: #ffb60a;
+    padding: 0.3em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
     font-size: 50px;
+    text-align: center;
     text-shadow: 6px 6px 3px black;
 }
 
@@ -43,9 +45,10 @@ div a {
 
 h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 45px;
     border-bottom: 4px solid green;
-    padding: 5px;
+    padding: 12px;
+    margin: auto;
     color: darkred;
 }
 
@@ -56,10 +59,10 @@ h2 {
 nav {
     background-color: rgb(93, 47, 25);
     font-size: 20px;
-    text-align:left;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    text-align: left;
     float: left;
+    min-height: 100%;
+    position: absolute;
     width: 150px;
 }
 
@@ -72,33 +75,28 @@ nav a:hover { color: red; }
 
 nav ul {
     list-style: none;
-    padding-left: 0;
+    padding-left: 10px;
+    padding-right: 5px;
 }
 
 nav ul li {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+ul {
+    list-style: none;
 }
 
 footer {
+    color: darkblue;
     background-color: white;
     font-size: 15px;
     text-align: center;
     padding: 1em;
 }
 
-img {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#wrapper {
-    background-color: #231814;
-    padding: 0;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    min-width: 900px;
-    max-width: 1280px;
-    box-shadow: 2px, 2px;
+#bullets {
+    list-style: disc;
 }

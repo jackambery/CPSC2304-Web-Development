@@ -2,16 +2,15 @@ main {
     padding-bottom: 2em;
     display: block;
     overflow: auto;
-    background-color: white;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 header {
-    font-size: 40px;
-    padding-top: 5px;
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 2.5em;
     padding-bottom: 15px;
-    margin-top: 2.5em;
     text-align: center;
 }
 
@@ -23,21 +22,41 @@ h2, header {
     color: rgb(205, 92, 21);
 }
 
-p {
-    font-size: 18px;
-}
-
 img {
     max-height: 250px;
     width: auto;
 }
 
+ul, p {
+    list-style: disc;
+    font-size: 14pt;
+}
+
+ol {
+    font-size: 14pt;
+}
+
 footer {
     margin-bottom: 30px;
-    background-color: white;
     font-size: 15px;
     text-align: center;
     padding: 1em;
+}
+
+.topcolor {
+    background-image: linear-gradient(
+        to bottom,
+        darkkhaki,
+        beige
+    );
+}
+
+.bottomcolor {
+    background-image: linear-gradient(
+        to top,
+        darkkhaki,
+        beige
+    );
 }
 
 .short {
