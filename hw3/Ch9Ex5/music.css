@@ -1,0 +1,7 @@
+select {
+    width: 200px;
+}
+
+p, input, fieldset {
+    font-weight: bold;
+}

@@ -1,0 +1,11 @@
+img {
+    margin: auto;
+    display: block;
+    width: 30%;
+}
+
+video {
+    margin: auto;
+    display: block;
+    width: 50%;
+}

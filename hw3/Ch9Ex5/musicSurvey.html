@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Music Survey
+    </title>
+    <link rel="stylesheet" href="music.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Music Survey
+        </h1>
+    </header>
+    <main>
+        <p>Name:</p>
+        <input type="text">
+        <p>E-Mail:</p>
+        <input type="text">
+        <br>
+        <br>
+        <fieldset>
+            <legend>Select your favorite types of music:</legend>
+            <input type="checkbox" name="pop" id="pop">
+            Pop <br>
+            <input type="checkbox" name="Classical" id="Classical">
+            Classical <br>
+            <input type="checkbox" name="Rock" id="Rock">
+            Rock <br>
+            <input type="checkbox" name="Folk" id="Folk">
+            Folk <br>
+            <input type="checkbox" name="Rap" id="Rap">
+            Rap <br>
+            <input type="checkbox" name="Other" id="Other">
+            Other <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Select how often you purchase Music:</legend>
+            <input type="radio" name="Weekly" id="Weekly">
+            Weekly <br>
+            <input type="radio" name="few" id="few">
+            A few CD's each year <br>
+            <input type="radio" name="Monthly" id="Monthly">
+            Monthly <br>
+            <input type="radio" name="Never" id="Never">
+            Never purchase
+        </fieldset>
+
+        <p>Select the locations you listen to Music:</p>
+        <select size="3" name="location" id="location">
+            <option value="home">
+                At home
+            </option>
+            <option value="car">
+                In the car
+            </option>
+            <option value="anywhere">
+                Anywhere
+            </option>
+        </select>
+
+        <p>What role does music play in your life?</p>
+        <textarea name="role" id="role" cols="70" rows="5"></textarea>
+        <br>
+        <input type="submit"> <input type="reset">
+
+    </main>
+</body>
