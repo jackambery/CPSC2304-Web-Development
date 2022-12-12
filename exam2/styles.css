@@ -1,0 +1,60 @@
+body {
+    background-color:#fcf9c6;;
+}
+
+main {
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+nav ul {
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+#banner {
+    height: 120px;
+    display: flex;
+    font-family: 'Lucida Sans';
+    color: #E0DECA;
+    background-color: #9EB23B;
+}
+
+#nav {
+    width: 150px;
+    height: 100vh;
+    float: left;
+    background-color: #C7D36F;
+}
+
+#sidebar {
+    width: 150px;
+    height: 100vh;
+    float: right;
+    background-color: #C7D36F;
+}
