@@ -37,6 +37,39 @@ h3 {
     font-size: 25px;
 }
 
+form {
+    display: table;
+}
+
+form p {
+    display: table-row;
+    text-align: right;
+}
+
+form label {
+    display: table-cell;
+}
+
+form input {
+    display: table-cell;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 70px;
+}
+
+.center {
+    text-align: center;
+}
+
+.indent {
+    margin-left: 75px;
+}
+
+.help {
+    font-style: italic;
+    color: grey;
+}
+
 #banner {
     height: 120px;
     display: flex;
