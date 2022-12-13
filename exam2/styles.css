@@ -9,18 +9,18 @@ main {
     padding-right: 30px;
 }
 
-nav ul {
+nav ul, div ul {
     list-style: none;
     text-decoration: none;
     font-size: 18px;
     padding-left: 15px;
 }
 
-nav li {
+nav li, div li {
     padding: 10px;
 }
 
-nav a {
+nav a, div a {
     text-decoration: none;
     color: black;
 }
@@ -37,37 +37,8 @@ h3 {
     font-size: 25px;
 }
 
-form {
-    display: table;
-}
-
-form p {
-    display: table-row;
-    text-align: right;
-}
-
-form label {
-    display: table-cell;
-}
-
-form input {
-    display: table-cell;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 70px;
-}
-
 .center {
     text-align: center;
-}
-
-.indent {
-    margin-left: 75px;
-}
-
-.help {
-    font-style: italic;
-    color: grey;
 }
 
 #banner {

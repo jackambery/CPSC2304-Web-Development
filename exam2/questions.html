@@ -6,6 +6,49 @@
         Jack's Pet Shop
     </title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .formatform {
+            display: table;
+        }
+
+        .formatrow {
+            display: table-row;
+            text-align: right;
+        }
+
+        .formatlabel {
+            display: table-cell;
+        }
+
+        .formatinput {
+            display: table-cell;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            margin-right: 70px;
+        }
+
+        input[type=text] {
+            background-color: #fff989;
+        }
+
+        select {
+            width: 250px;
+            height: 75px;
+        }
+
+        textarea {
+            margin-bottom: 20px;
+        }
+
+        .help {
+            font-style: italic;
+            color: grey;
+        }
+
+        .indent {
+            margin-left: 75px;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,6 +69,10 @@
             <li>
                 <a href="products.html">Pet Products</a>
             </li>
+        </ul>
+    </nav>
+    <div id="sidebar">
+        <ul>
             <li>
                 <a href="https://www.chewy.com/" target="_blank">Chewy.com</a>
             </li>
@@ -36,11 +83,6 @@
                 <a href="https://www.petproducts.com/" target="_blank">PetProducts</a>
             </li>
         </ul>
-    </nav>
-    <div id="sidebar">
-        <p>
-            This is the sidebar.
-        </p>
     </div>
     <main>
         <h2 class="center">
@@ -54,30 +96,31 @@
             unsolicited e-mail from me.
             <br>Thank you for your cooperation and participation.
         </p>
-        <form action="">
-            <p>
-                <label for="first_name">First Name: </label>
-                <input type="text" name="first_name" id="first_name">
-                <label for="last_name">Last Name: </label>
-                <input type="text" name="last_name" id="last_name">
+        <form action="https://webdevbasics.net/scripts/demo.php">
+        <div class="formatform">
+            <p class="formatrow">
+                <label class="formatlabel" for="first_name">First Name: </label>
+                <input class="formatinput" type="text" name="first_name" id="first_name">
+                <label class="formatlabel" for="last_name">Last Name: </label>
+                <input class="formatinput" type="text" name="last_name" id="last_name">
             </p>
-            <p>
-                <label for="city">City: </label>
-                <input type="text" name="city" id="city">
-                <label for="state">State: </label>
-                <input type="text" name="state" id="state">
+            <p class="formatrow">
+                <label class="formatlabel" for="city">City: </label>
+                <input class="formatinput" type="text" name="city" id="city">
+                <label class="formatlabel" for="state">State: </label>
+                <input class="formatinput" type="text" name="state" id="state">
             </p>
-            <p>
-                <label for="zip">Zip Code: </label>
-                <input type="text" name="zip" id="zip">
-                <label for="country">Country: </label>
-                <input type="text" name="country" id="country">
+            <p class="formatrow">
+                <label class="formatlabel" for="zip">Zip Code: </label>
+                <input class="formatinput" type="text" name="zip" id="zip">
+                <label class="formatlabel" for="country">Country: </label>
+                <input class="formatinput" type="text" name="country" id="country">
             </p>
-            <p>
-                <label for="url">URL: </label>
-                <input type="text">
+            <p class="formatrow">
+                <label class="formatlabel" for="url">URL: </label>
+                <input class="formatinput" type="url">
             </p>
-        </form>
+        </div>
         <br>
         <legend>What is your age group?</legend>
         <div class="indent">
@@ -150,5 +193,11 @@
             </select>
         </div>
         <br>
+        <legend>Comments:</legend>
+        <div class="indent">
+            <textarea name="comments" id="comments" cols="60" rows="5"></textarea>
+            <br><input type="submit" value="Submit Form">&nbsp;&nbsp;<input type="reset" value="Reset Form">
+        </div>
+        </form>
     </main>
 </body>

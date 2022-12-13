@@ -6,12 +6,70 @@
         Jack's Pet Shop
     </title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .tableimg {
+            height: 200px;
+            width: auto;
+        }
+
+        table {
+            margin: 50px;
+            width: 90%;
+            border-spacing: 0;
+            border: black, 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        th {
+            padding: 10px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        tr:nth-of-type(odd) {
+            background-color: #C7D36F;
+        }
+
+        tr:nth-of-type(even) {
+            background-color: #fcf9c6;
+        }
+
+        iframe {
+            display: block;;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .frag {
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #nav {
+            width: 150px;
+            height: 300vh;
+            float: left;
+            background-color: #C7D36F;
+        }
+
+        #sidebar {
+            width: 150px;
+            height: 300vh;
+            float: right;
+            background-color: #C7D36F;
+        }
+    </style>
 </head>
 
 <body>
     <header id="banner">
         <img src="images/logo.png" alt="">
-        <h1>
+        <h1 id="top">
             Jack's Pet Shop
         </h1>
     </header>
@@ -26,6 +84,10 @@
             <li>
                 <a href="products.html">Pet Products</a>
             </li>
+        </ul>
+    </nav>
+    <div id="sidebar">
+        <ul>
             <li>
                 <a href="https://www.chewy.com/" target="_blank">Chewy.com</a>
             </li>
@@ -36,15 +98,93 @@
                 <a href="https://www.petproducts.com/" target="_blank">PetProducts</a>
             </li>
         </ul>
-    </nav>
-    <div id="sidebar">
-        <p>
-            This is the sidebar.
-        </p>
     </div>
     <main>
-        <p>
-            The products and video go here
-        </p>
+        <h2 class="center">
+            Products to Check Out!
+        </h2>
+        <a class="frag" href="#bottom">Bottom of Page</a>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>User Rating</th>
+            </tr>
+            <tr>
+                <td>KONG Cozie Baily the Blue Dog Toy</td>
+                <td>The KONG Cozies are cute, soft and cuddly plush toys made with an extra layer of material, so
+                    they're extra tough.
+                    Cozies are perfect for a game of fetch or as a comfort toy for your furry friend.
+                    Grab one of the 10 amazingly cute Cozie characters for your dog and we know your dog will love you
+                    for it.
+                </td>
+                <td>$8.29</td>
+                <td><img class="tableimg" src="images/kong.webp" alt=""></td>
+                <td>☆☆☆☆</td>
+            </tr>
+            <tr>
+                <td>Frisco Bird Teaser with Feathers Cat Toy</td>
+                <td>This is no angry bird, but rather the perfect play buddy for your kitty from Frisco by Chewy.
+                    Wave it around and let the colorful feathers, dangly string, crinkly sound and catnip entice bored
+                    felines to jump into play.
+                    Leap, actually!
+                    By stimulating their natural hunting instincts, it's the perfect way to provide cats with the daily
+                    exercise they need.
+                    Playing together also helps strengthen the bond between you and your cat, on the daily.
+                </td>
+                <td>$3.45</td>
+                <td><img class="tableimg" src="images/frisco.webp" alt=""></td>
+                <td>☆☆☆☆☆</td>
+            </tr>
+            <tr>
+                <td>Penn-Plax SpongeBob Pineapple Home Aquarium Ornament</td>
+                <td>SpongeBob fans of all ages can bring a little bit of Bikini Bottom to their own aquarium with the
+                    Penn-Plax SpongeBob Pineapple Home Aquarium Ornament.
+                    This beautifully colored and incredibly detailed resin replica features the iconic home of SpongeBob
+                    himself.
+                    It makes a great hideout for fish as they swim in and out of the multiple openings.
+                    The Pineapple Home Aquarium Ornament can be used with other SpongeBob decorations to recreate the
+                    magical Bikini Bottom world.
+                    It's great for aquariums, terrariums or even as a stand-alone desk display.
+                </td>
+                <td>$5.87</td>
+                <td><img class="tableimg" src="images/bob.jpg" alt=""></td>
+                <td>☆☆☆☆</td>
+            </tr>
+            <tr>
+                <td>SunGrow Bird Chew Toy, Medium & Large Parrot Foraging Blocks for Cage</td>
+                <td>Keep your feathered friend entertained with the SunGrow Parrot Chew Toy.
+                    These rainbow wood foraging blocks provide your beaked buddy with plenty of mental and physical
+                    activity as this toy features multiple shapes and colors for him to chew on and play with.
+                    The different textures will keep your companion interested and occupied with wooden blocks and
+                    cotton rope in a variety of colors.
+                    This toy also includes a metal buckle to hold it in place.
+                    Made of 100% natural materials, this toy is suggested for macaws, African grey cockatoos, and a
+                    variety of Amazon parrots.
+                </td>
+                <td>$12.99</td>
+                <td><img class="tableimg" src="images/bird.jpg" alt=""></td>
+                <td>☆☆☆☆☆</td>
+            </tr>
+            <tr>
+                <td>Shires Equestrian Products Carrot Ball Horse Toy, Blue</td>
+                <td>Save your best buddy from boredom with the Shires Equestrian Products Carrot Ball Horse Toy.
+                    This unique horse toy is designed to dispense carrots, turnips, parsnips, apples and more.
+                    It is crafted to help increase dexterity, encourage learning and provide healthy entertainment while
+                    discouraging cribbing and chewing.
+                    This carrot ball toy for horses is built with durable anti-burst construction that inflates easily
+                    using an air pump and the included adaptor.
+                    It features an innovative design that varies the effort required to remove the treats as your
+                    carrot-loving companion gets more familiar with his new favorite toy.
+                </td>
+                <td>$47.99</td>
+                <td><img class="tableimg" src="images/horse.webp" alt=""></td>
+                <td>☆☆☆☆</td>
+            </tr>
+        </table>
+        <iframe id="bottom" width="751" height="480" src="https://www.youtube.com/embed/Kz70jndzXMA" title="Carrot Ball" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a class="frag" href="#top">Top of Page</a>
     </main>
 </body>
